@@ -4,8 +4,8 @@ require __DIR__ . '/vendor/autoload.php';
 use Infrastructure\Persistence\Database;
 use Infrastructure\Persistence\MySQLUserRepository;
 use Application\UseCase\CreateUser;
-use Infrastructure\Framework\Http\UserController;
 use Application\UseCase\ListUsers;
+use Infrastructure\Framework\Http\UserController;
 
 try {
     // Crear conexión (devuelve un PDO)
@@ -27,7 +27,6 @@ try {
     } else {
         $userController->form();
     }
-
 } catch (Throwable $e) {
     echo "<h3>Error:</h3>";
     echo "<pre>" . $e->getMessage() . "</pre>";
