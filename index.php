@@ -21,12 +21,17 @@ try {
     // Controlador HTTP
     $userController = new UserController($createUser, $listUsers);
 
-    // Routing muy básico
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $userController->store($_POST);
+    if (isset($_GET['list'])) {
+        $userController->index();
     } else {
-        $userController->form();
+        // Routing muy básico
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $userController->store($_POST);
+        } else {
+            $userController->form();
+        }
     }
+
 } catch (Throwable $e) {
     echo "<h3>Error:</h3>";
     echo "<pre>" . $e->getMessage() . "</pre>";
