@@ -15,27 +15,6 @@ class ComposerStaticInit084553bdafe58f4e64e7e9976915005e
     );
 
     public static $prefixLengthsPsr4 = array (
-        't' => 
-        array (
-            'tests\\' => 6,
-        ),
-        'm' => 
-        array (
-            'model\\' => 6,
-        ),
-        'l' => 
-        array (
-            'logger\\' => 7,
-        ),
-        'h' => 
-        array (
-            'helpers\\' => 8,
-        ),
-        'c' => 
-        array (
-            'controllers\\' => 12,
-            'config\\' => 7,
-        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
@@ -53,6 +32,10 @@ class ComposerStaticInit084553bdafe58f4e64e7e9976915005e
         array (
             'Monolog\\' => 8,
         ),
+        'I' => 
+        array (
+            'Infrastructure\\' => 15,
+        ),
         'G' => 
         array (
             'GrahamCampbell\\ResultType\\' => 26,
@@ -60,35 +43,16 @@ class ComposerStaticInit084553bdafe58f4e64e7e9976915005e
         'D' => 
         array (
             'Dotenv\\' => 7,
+            'Domain\\' => 7,
             'DeepCopy\\' => 9,
+        ),
+        'A' => 
+        array (
+            'Application\\' => 12,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'tests\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/tests',
-        ),
-        'model\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/model',
-        ),
-        'logger\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/logger',
-        ),
-        'helpers\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/helpers',
-        ),
-        'controllers\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/controllers',
-        ),
-        'config\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/config',
-        ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
@@ -121,6 +85,10 @@ class ComposerStaticInit084553bdafe58f4e64e7e9976915005e
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Infrastructure\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Infrastructure',
+        ),
         'GrahamCampbell\\ResultType\\' => 
         array (
             0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
@@ -129,9 +97,17 @@ class ComposerStaticInit084553bdafe58f4e64e7e9976915005e
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
+        'Domain\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Domain',
+        ),
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'Application\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Application',
         ),
     );
 

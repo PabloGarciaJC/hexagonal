@@ -9,12 +9,10 @@
     },
     "autoload": {
         "psr-4": {
-            "controllers\\": "controllers/",
-            "model\\": "model/",
-            "helpers\\": "helpers/",
-            "config\\": "config/",
-            "tests\\": "tests/",
-            "logger\\": "logger/" 
+            "Domain\\": "src/Domain/",
+            "Application\\": "src/Application/",
+            "Infrastructure\\": "src/Infrastructure/"
         }
     }
+
 }

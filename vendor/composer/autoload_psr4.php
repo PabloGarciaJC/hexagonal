@@ -6,12 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'tests\\' => array($baseDir . '/tests'),
-    'model\\' => array($baseDir . '/model'),
-    'logger\\' => array($baseDir . '/logger'),
-    'helpers\\' => array($baseDir . '/helpers'),
-    'controllers\\' => array($baseDir . '/controllers'),
-    'config\\' => array($baseDir . '/config'),
     'Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
@@ -20,7 +14,10 @@ return array(
     'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src/PhpOption'),
     'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
+    'Infrastructure\\' => array($baseDir . '/src/Infrastructure'),
     'GrahamCampbell\\ResultType\\' => array($vendorDir . '/graham-campbell/result-type/src'),
     'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),
+    'Domain\\' => array($baseDir . '/src/Domain'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
+    'Application\\' => array($baseDir . '/src/Application'),
 );
