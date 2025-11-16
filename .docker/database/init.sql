@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: mysql
--- Tiempo de generación: 11-11-2025 a las 16:05:03
+-- Tiempo de generación: 16-11-2025 a las 19:03:34
 -- Versión del servidor: 9.5.0
 -- Versión de PHP: 8.3.26
 
@@ -29,21 +29,11 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `users` (
   `id` int NOT NULL,
-  `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(120) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Volcado de datos para la tabla `users`
---
-
-INSERT INTO `users` (`id`, `name`, `email`, `created_at`) VALUES
-(1, 'Juan Pérez', 'juan@example.com', '2025-11-11 16:04:55'),
-(2, 'Laura Martínez', 'laura@example.com', '2025-11-11 16:04:55'),
-(3, 'Carlos Ramírez', 'carlos@example.com', '2025-11-11 16:04:55'),
-(4, 'Ana Gómez', 'ana@example.com', '2025-11-11 16:04:55'),
-(5, 'Pablo García', 'pablo@example.com', '2025-11-11 16:04:55');
 
 --
 -- Índices para tablas volcadas
@@ -64,7 +54,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

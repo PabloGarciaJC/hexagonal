@@ -35,7 +35,7 @@
             <button class="users__button users__button--primary" type="submit">Crear</button>
         </form>
 
-        <p class="users__help"><a class="users__link" href="http://localhost:8081/?list=listar">Ver usuarios</a></p>
+        <!-- <p class="users__help"><a class="users__link" href="http://localhost:8081/?list=listar">Ver usuarios</a></p> -->
     </main>
 </body>
 
