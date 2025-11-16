@@ -18,6 +18,7 @@ class UserController
 
     public function form(): void
     {
+        // Mostrar formulario de registro (no protegido)
         include __DIR__ . '/../View/user_form.php';
     }
 
@@ -25,12 +26,22 @@ class UserController
     {
         $name = $request['name'] ?? '';
         $email = $request['email'] ?? '';
-        $user = $this->createUser->execute($name, $email);
+        $password = $request['password'] ?? '';
+        $user = $this->createUser->execute($name, $email, $password);
         include __DIR__ . '/../View/user_created.php';
     }
 
     public function index(): void
     {
+        // Proteger ruta: requiere sesión
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+        if (empty($_SESSION['user_id'])) {
+            header('Location: /?login=form');
+            exit;
+        }
+
         $users = $this->listUsers->execute();
         include __DIR__ . '/../View/user_list.php';
     }
