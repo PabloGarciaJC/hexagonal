@@ -504,6 +504,68 @@ body {
     pointer-events: none;
 }
 
+/* =========================================
+   SIDEBAR - FILTROS
+========================================= */
+.catalog-sidebar h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.filter-form .filter-group {
+    margin-bottom: 1.5rem;
+}
+
+.filter-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.filter-form select,
+.filter-form input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+.filter-form select:focus,
+.filter-form input[type="number"]:focus {
+    border-color: var(--color-accent);
+    outline: none;
+    box-shadow: 0 0 4px rgba(254, 189, 105, 0.5);
+}
+
+/* Rango de precio inline */
+.price-range {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.price-range input {
+    width: 50%;
+}
+
+/* Botón filtrar */
+.filter-form .btn-primary {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Opcional: hover efecto más suave */
+.filter-form .btn-primary:hover {
+    background: var(--color-accent-hover);
+}
 
 /* =========================================
    FOOTER
