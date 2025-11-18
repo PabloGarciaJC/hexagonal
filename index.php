@@ -87,7 +87,7 @@ try {
             header('Location: /?list=listar');
         }
     } else {
-        // Home Amazon-like
+        // Home Ecommerce-like
         if (!isset($_GET['shop']) && !isset($_GET['cart']) && !isset($_GET['order']) && !isset($_GET['admin'])) {
             $products = $productRepository->findAll();
             include __DIR__ . '/src/Infrastructure/Framework/View/home.php';

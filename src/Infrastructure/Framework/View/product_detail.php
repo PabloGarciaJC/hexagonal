@@ -93,7 +93,7 @@
             <a href="#">Ayuda</a>
             <a href="#">Contacto</a>
         </div>
-        <div class="footer__copy">&copy; 2025 Amazon Hexagon. Proyecto demo.</div>
+        <div class="footer__copy">&copy; 2025 Ecommerce Hexagon. Proyecto demo.</div>
     </footer>
 </body>
 </html>

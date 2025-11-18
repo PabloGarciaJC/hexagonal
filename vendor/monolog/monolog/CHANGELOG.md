@@ -668,7 +668,7 @@ New deprecations:
 ### 1.7.0 (2013-11-14)
 
   * Added ElasticSearchHandler to send logs to an Elastic Search server
-  * Added DynamoDbHandler and ScalarFormatter to send logs to Amazon's Dynamo DB
+  * Added DynamoDbHandler and ScalarFormatter to send logs to Ecommerce's Dynamo DB
   * Added SyslogUdpHandler to send logs to a remote syslogd server
   * Added LogglyHandler to send logs to a Loggly account
   * Added $level to IntrospectionProcessor so it only adds backtraces when needed

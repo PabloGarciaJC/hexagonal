@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Panel de Administración</title>
-    <link rel="stylesheet" href="/public/assets/css/amazon.css">
+    <link rel="stylesheet" href="/public/assets/css/Ecommerce.css">
     <style>
         .admin-container { max-width: 1100px; margin: 2rem auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); padding: 2rem; }
         .admin-title { color: #232f3e; font-size: 2rem; margin-bottom: 1.5rem; }
@@ -67,7 +67,7 @@
             <a href="#">Ayuda</a>
             <a href="#">Contacto</a>
         </div>
-        <div class="footer__copy">&copy; 2025 Amazon Hexagon. Proyecto demo.</div>
+        <div class="footer__copy">&copy; 2025 Ecommerce Hexagon. Proyecto demo.</div>
     </footer>
 </body>
 </html>
