@@ -1,7 +1,7 @@
 <main class="home">
     <section class="home-hero">
         <div class="home-hero__text">
-            <h1 class="home-title">Bienvenido a Ecommerce Hexagon</h1>
+            <h1 class="home-title">Bienvenido a Ecommerce Hexagonal</h1>
             <p class="home-subtitle">Tu tienda online con miles de productos, envío rápido y la mejor experiencia.</p>
         </div>
     </section>
