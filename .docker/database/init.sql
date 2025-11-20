@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: mysql
--- Tiempo de generación: 16-11-2025 a las 23:47:33
+-- Tiempo de generación: 20-11-2025 a las 12:10:42
 -- Versión del servidor: 9.5.0
 -- Versión de PHP: 8.3.26
 
@@ -151,7 +151,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `created_at`) VALUES
-(7, 'Pablo Garcia', 'pablo@hotmail.com', '$2y$10$63GfSHDvsj9UuQ6XjTYZF.xZrAwJJkpmc5T93HaM8/9kRS/3/1CKi', '2025-11-16 23:46:26');
+(15, 'Pablo Garcia', 'demo@pablogarciajc.com', '$2y$10$w81Dp/ndvzUm79klnJ67K.exsjOBwvzpwfw5qRRExRezX9B6fJl2u', '2025-11-20 12:08:01');
 
 --
 -- Índices para tablas volcadas
@@ -217,13 +217,13 @@ ALTER TABLE `favorites`
 -- AUTO_INCREMENT de la tabla `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `order_items`
 --
 ALTER TABLE `order_items`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `products`
@@ -241,7 +241,7 @@ ALTER TABLE `reviews`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Restricciones para tablas volcadas
